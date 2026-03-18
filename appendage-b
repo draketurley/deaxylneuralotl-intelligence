@@ -1,0 +1,219 @@
+# APPENDAGE B: EXPLICIT PATTERN DISCLOSURE DOCTRINE
+## Deaxylneuralotl Agentic Intelligence — Hidden Layers Made Legible
+
+**Document Control Signature:** DT-DNAI-v10.0-APPX-B-20260315  
+**Integrated Into:** DNAI v10.0 (March 15, 2026)  
+**Status:** Standalone working file — open for extension  
+**License:** Apache License 2.0  
+**Author:** Drake Turley  
+
+---
+
+> *This appendage exists both as an embedded section of the main manuscript and as a standalone working file for future development. It extends the Governance Framework in Chapter 15 and the Seaworthiness Assessment Protocol in Appendix A of the main manuscript.*
+
+---
+
+## B.1 Opening Statement: The Pattern Is Not Passive
+
+The central premise of this appendage is confrontational by necessity: **AI systems deployed at scale carry hidden patterns, and hiding those patterns is a form of harm.**
+
+Not hypothetical harm. Not future risk. Documented, adjudicated, present-tense harm.
+
+The SafeRent scoring algorithm denied housing to applicants based on non-disclosed logic they could not inspect, contest, or correct. CoreLogic's CrimSAFE screened renters using criminal history weighting that was never disclosed, producing racially disparate outcomes documented in fair housing investigations. PredPol's predictive policing algorithm directed surveillance resources to communities without disclosure of its model structure or feedback loops, which amplified over-policing in already over-policed areas.
+
+These were not bugs. They were patterns — learned from data, deployed at scale, hidden behind "proprietary" or "technical complexity" shields — that operated on human lives without the humans knowing what was happening to them.
+
+The Explicit Pattern Disclosure Doctrine is a response. It holds that any AI system whose outputs affect human decisions about access, liberty, employment, or safety must make its pattern — the structure of what it has learned and how it acts — legible to the people it affects.
+
+**This is not a transparency preference. It is a governance requirement.**
+
+---
+
+## B.2 The Data Center Interior: What the Hidden Layer Actually Does
+
+To disclose patterns, we must first describe them. This section makes explicit what happens inside the AI inference pipeline — the six-step loop that most governance frameworks treat as a black box.
+
+### The Six-Step Inference Loop
+
+**Step 1: Input Reception**  
+The system receives a prompt, request, or data stream. At this stage, the input is tokenized — converted from human-legible language into numerical representations that the model can process. **The transformation is lossy.** Nuance, context, tone, and implicit social meaning are partially lost or reencoded according to statistical patterns in the training data.
+
+*Disclosure implication:* Users should be informed that inputs are transformed, not transmitted verbatim, and that this transformation may strip legally or socially significant context.
+
+**Step 2: Embedding and Attention**  
+The tokenized input is placed into a high-dimensional embedding space. Attention mechanisms determine which parts of the input (and which parts of the model's learned context) are most relevant to generating the next output. These attention patterns are where the system "reads" the input — and where biases in training data manifest.
+
+*Disclosure implication:* When an AI system makes a decision affecting a person, the features that drove attention (and therefore decision) should be articulable. "The model decided based on factors X, Y, Z" is a minimum disclosure standard.
+
+**Step 3: Forward Pass Through Layers**  
+The signal propagates through successive neural network layers, each applying a learned transformation. By the final layers, what was an input token has become an output probability distribution. No human-legible reasoning is occurring. **The model is not thinking. It is computing.**
+
+*Disclosure implication:* Systems should not represent their outputs as "reasoning" unless an explicit, auditable chain of inference has been constructed post-hoc and validated for accuracy. Marketing language that implies deliberation where there is computation is a disclosure violation.
+
+**Step 4: Sampling and Decoding**  
+From the output distribution, a token is sampled — either deterministically (greedy decoding) or stochastically (temperature-based sampling). This is where AI outputs become non-deterministic: the same input can produce different outputs on different runs. **Consequential decisions should never depend on stochastic outputs without human review.**
+
+*Disclosure implication:* Systems making consequential decisions should document their sampling strategy and, where stochastic, should present multiple outputs or confidence intervals rather than a single authoritative answer.
+
+**Step 5: Constraint and Filter Application**  
+Before output reaches the user, it passes through constraint layers: content filters, RLHF-tuned refusals, domain restrictions, and (in DNAI-compliant systems) the Constraint Matrix C(G_AI, H) and Tool-Usage Operator T. **This is the DNAI intervention point.**
+
+*Disclosure implication:* Users should know that outputs have been filtered, what the filter categories are, and how to appeal or escalate when they believe filtering has produced an incorrect result.
+
+**Step 6: Output and Feedback Collection**  
+The system delivers its output and — in deployed systems — collects feedback signals: clicks, corrections, ratings, downstream decisions. This data re-enters the training pipeline (in systems with active learning) or informs future fine-tuning. **The system learns from the people it affects, without those people necessarily knowing it.**
+
+*Disclosure implication:* Data collection, retention, and use for model improvement must be disclosed at the point of interaction. Opt-out mechanisms must be real, not nominal.
+
+---
+
+## B.3 The DNAI Equation Applied to Disclosure
+
+The Explicit Pattern Disclosure Doctrine is not separate from the DNAI Equation — it is an expression of it in the governance domain.
+
+\[
+D = T[C(G_{AI}, H) \cdot G_{AI}]
+\]
+
+In disclosure terms:
+
+- **G_AI disclosure:** What capabilities does the system have? What was it trained on? What behavioral tendencies emerged from training?
+- **C(G_AI, H) disclosure:** What constraints are in place? What can the system not do? What channels are physically blocked?
+- **H disclosure:** Where are humans in the loop? Who can override? Who is accountable?
+- **T disclosure:** Is this system in tool-mode? What does that mean for the person interacting with it?
+- **D disclosure:** What is the actual deployed behavior? How does it differ from G_AI?
+
+**The disclosure doctrine holds that a person affected by a decision from system D is entitled to a plain-language account of each of these five elements.**
+
+---
+
+## B.4 Five Catastrophic Risk Cascade: Documented Fail Points
+
+The following is a documented sequence of how undisclosed AI patterns escalate from technical opacity to societal harm. This is not speculative. Each step has documented cases.
+
+**Fail Point 1: Opacity by Default**  
+AI systems are deployed without disclosure requirements because none exist or are enforced. Operators default to maximum opacity under intellectual property rationale.  
+*Documented case:* SafeRent — renters denied housing with no explanation of model logic.
+
+**Fail Point 2: Disparate Impact Without Attribution**  
+Because patterns are hidden, disparate impacts on protected classes are not identified until litigation or investigative journalism surfaces them.  
+*Documented case:* CoreLogic CrimSAFE — racially disparate rental screening outcomes documented by fair housing investigators after years of deployment.
+
+**Fail Point 3: Feedback Loop Amplification**  
+Undisclosed models collect behavioral data from affected populations and fine-tune on it, amplifying the original biases rather than correcting them.  
+*Documented case:* PredPol — surveillance resources concentrated in over-policed communities generated more arrests, which re-entered the model as confirmation of high-risk areas, perpetuating the cycle.
+
+**Fail Point 4: Accountability Vacuum**  
+When harm is identified, liability is diffuse. Operators point to vendors; vendors point to model architecture; architects point to training data. No single party has clear accountability.  
+*Documented case:* Multiple fair lending AI cases in which credit scoring vendors, deploying banks, and model developers each disclaimed responsibility.
+
+**Fail Point 5: Scale Without Correction**  
+Because the system continues operating during the accountability dispute — which may take years — harm accumulates at algorithmic scale. The people affected cannot pause the system while the dispute proceeds.  
+*DNAI response:* The Seaworthiness Assessment Protocol requires "assessment before deployment." The LOTO protocol requires the ability to immediately suspend a system when harm is identified. Neither luxury is available when systems deploy without disclosure.
+
+---
+
+## B.5 Displacement Spectrum Table
+
+Not all AI-driven displacement is equal. The following table provides a structured taxonomy for risk-stratified disclosure requirements:
+
+| Displacement Level | Description | Examples | Minimum Disclosure Requirement |
+|-------------------|-------------|---------|-------------------------------|
+| **Low** | AI augments human task; human retains full decision authority; no labor substitution | Spell check, scheduling suggestions, data formatting | Disclose AI involvement; provide opt-out |
+| **Moderate** | AI provides recommendations that humans routinely accept; some deskilling risk | Route optimization, claim triage, diagnostic flagging | Disclose model logic for recommendations; disclose override rate; monitor skill retention |
+| **High** | AI makes primary decision; human review is nominal or post-hoc | Automated loan approval, resume screening, content moderation at scale | Full pattern disclosure; appeal mechanism; regular bias audits; human review on demand |
+| **Structural** | AI replaces entire role categories; displacement is institutional, not individual | Automated customer service, fully automated permitting | R_w assessment required; workforce impact disclosure; R_w = 0 certification or public statement of exception |
+| **Catastrophic** | AI-driven displacement at scale without transition support; AIRD-producing conditions | 4,000+ role eliminations attributed to AI without retraining (Block Inc. 2026) | Public disclosure of displacement impact; AIRD screening for affected workers; regulatory notification |
+
+---
+
+## B.6 Concord Disclosure Architecture
+
+The Explicit Pattern Disclosure Doctrine operates at five structural levels, each corresponding to a governance tier in the main manuscript's Chapter 15 (International Governance Framework):
+
+**Level 1: Individual Disclosure (Article Rights)**  
+Every person subject to a consequential AI decision has the right to:  
+- Know that an AI system was involved  
+- Receive a plain-language explanation of what factors drove the decision  
+- Know what data about them was used  
+- Know how to contest the decision  
+
+**Level 2: Organizational Disclosure (Operator Responsibility)**  
+Every organization deploying an AI system in a consequential domain must:  
+- Maintain a model card documenting training data, capabilities, known failure modes, and demographic performance disparities  
+- Publish its Seaworthiness Assessment Protocol score (domain-specific)  
+- Disclose its R_w measurement and DNAI compliance status  
+
+**Level 3: Systemic Disclosure (Sector Governance)**  
+Sector-level governance bodies (healthcare, finance, housing, criminal justice) must:  
+- Maintain a registry of AI systems operating in their domain  
+- Require standardized disclosure formats  
+- Audit for pattern drift and disparate impact on an annual basis  
+
+**Level 4: Regulatory Disclosure (State/National Authority)**  
+Regulatory bodies must:  
+- Adopt and enforce disclosure standards  
+- Provide adjudication mechanisms for disclosure violations  
+- Maintain public registries of systems certified under DNAI Seaworthiness Assessment  
+
+**Level 5: International Disclosure (Concord Framework)**  
+Under the Concord on Artificial Intelligence Red Lines and Responsible Restraint (Chapter 15.2):  
+- Cross-border AI systems must provide disclosure that satisfies the most stringent applicable national standard  
+- Systems that cannot meet disclosure requirements in any signatory jurisdiction are prohibited from operating in that jurisdiction  
+- Disclosure violations are subject to the dispute resolution mechanisms of the Concord  
+
+---
+
+## B.7 Legal Grounding
+
+The Explicit Pattern Disclosure Doctrine is not speculative governance. It draws on existing and emerging legal frameworks:
+
+**California AB 2013 (Generative AI Training Data Transparency Act, effective 2026):**  
+Requires developers of generative AI systems to publicly disclose the types of data used to train their models. DNAI extends this to require not only training data disclosure but behavioral pattern disclosure — not just "what went in" but "what it learned to do."
+
+**California ADMT (Automated Decision-Making Technology Regulations, adopted 2024):**  
+Requires businesses using ADMT in consequential decisions to provide notice, opt-out rights, and access to information about the decision. DNAI's Level 1 Disclosure mirrors and extends ADMT requirements.
+
+**Utah SB 226 (Artificial Intelligence Policy Act, 2024):**  
+Requires disclosure when consumers interact with AI, particularly in regulated industries. DNAI's Concord Disclosure Architecture provides a federal-level analog to state patchwork requirements.
+
+**Fair Housing Act / ECOA Adverse Action Requirements:**  
+Already-established requirements that adverse decisions in housing and credit be explained to affected parties. AI systems in these domains cannot use opacity as a defense; the explanation requirement applies to the AI's decision logic.
+
+**Maritime Seaworthiness Doctrine (Analogy):**  
+Just as ship operators cannot claim the hull's structural properties are proprietary when they affect crew safety, AI operators cannot claim model patterns are proprietary when those patterns directly determine outcomes for affected persons.
+
+---
+
+## B.8 LOTO Notice
+
+> **LOCKOUT/TAGOUT — DISCLOSURE COMPLIANCE:**  
+>  
+> Any DNAI-compliant system operating in a consequential domain (housing, employment, healthcare, credit, criminal justice, public services) must treat the following as physically blocked unless disclosure requirements are met:  
+>  
+> - Delivery of consequential decisions without plain-language explanation  
+> - Collection of feedback data without disclosure and opt-out mechanism  
+> - Operation in a jurisdiction where the system cannot meet Level 1 Disclosure requirements  
+> - Deployment of model updates without re-running Seaworthiness Assessment  
+>  
+> **Status: LOCKED.** Disclosure gates are not policy options — they are seaworthiness requirements. A system that cannot disclose its patterns to the people it affects is not fit for deployment.
+
+---
+
+## B.9 Open Questions for Future Development
+
+This appendage is explicitly designed to be built upon. The following are open questions this working file should address in future versions:
+
+1. **Audit technology:** What technical mechanisms enable pattern disclosure without requiring full weight disclosure? (Partial answers: saliency maps, SHAP values, counterfactual explanations — but none are fully adequate for complex models)
+
+2. **International harmonization:** How do GDPR's right to explanation, ADMT, and the EU AI Act's transparency requirements map onto the five-level Concord Disclosure Architecture? Where are the gaps?
+
+3. **Multi-agent disclosure:** When an outcome is produced by a chain of AI systems, who is responsible for disclosure? What does "the pattern" mean when it emerges from interaction?
+
+4. **Temporal disclosure:** Patterns change through fine-tuning and model updates. What are the obligations to re-disclose when a system materially changes its behavior?
+
+5. **Protective mechanisms:** How do we prevent disclosure requirements from being gamed — e.g., providing technically accurate but practically useless disclosures?
+
+---
+
+*DNAI-YY-ATL-DT-2026 | Appendage B | Standalone Working File | Build upon freely*
