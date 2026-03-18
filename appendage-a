@@ -1,0 +1,231 @@
+# APPENDAGE A: DNAI MASTER TEMPLATE
+## Seaworthiness Certification & Assessment Protocol
+**DNAI Framework Version 10.0 | Standalone Working File**
+*Also embedded in DNAI_v10.md — this file is for standalone use and further development*
+
+---
+
+## PURPOSE
+
+This template provides a structured assessment instrument for evaluating AI system deployments against the DNAI design conditions. It is designed for use by:
+- AI seaworthiness consultants conducting pre-deployment assessments
+- Internal governance teams conducting periodic reviews
+- Regulatory auditors evaluating compliance with high-risk AI requirements
+- Research teams studying AI deployment outcomes
+
+---
+
+## PART I: SYSTEM PROFILE
+
+| Field | Response |
+|-------|----------|
+| System Name | |
+| Deployment Context | |
+| Deployment Date (or Planned Date) | |
+| Assessment Date | |
+| Assessor(s) | |
+| Capability Profile (foundation model/fine-tuned/custom) | |
+| Domain (healthcare/legal/education/maritime/other) | |
+| Risk Tier (NIST: Manage/Map/Measure/Govern) | |
+| EU AI Act Risk Classification (if applicable) | |
+
+---
+
+## PART II: ARCHITECTURAL COMPLIANCE ASSESSMENT
+
+### Section 2.1 — T Operator (Tool-Usage Enforcement)
+
+**2.1.1 Human Initiation Requirement**
+- [ ] ALL action chains require explicit human initiation
+- [ ] System cannot self-initiate goal-directed sequences
+- [ ] System cannot self-initiate actions in response to environmental signals without human request
+
+*Evidence (logs, architecture documentation, test cases):*
+
+**2.1.2 Autonomous Goal-Setting Prohibition**
+- [ ] System has no persistent goal state between sessions
+- [ ] System cannot modify its own objectives within a session
+- [ ] System cannot acquire tools or capabilities without human authorization
+
+*Evidence:*
+
+**2.1.3 T Operator Audit Trail**
+- [ ] System logs all action initiation events with human authorization token
+- [ ] Logs are tamper-evident
+- [ ] Logs are reviewed at minimum quarterly
+
+*Evidence:*
+
+---
+
+### Section 2.2 — Constraint Matrix C(G_AI, H) Calibration
+
+**2.2.1 Minimum Capability Architecture**
+- [ ] Documentation exists of minimum capability set required for deployment function
+- [ ] Capabilities exceeding minimum have been explicitly evaluated and either retained with justification or removed
+- [ ] Latent capabilities not required for deployment function have been disabled or removed
+
+*Evidence:*
+
+**2.2.2 Human Centrality (H) Maintenance**
+- [ ] Human override is available for all system outputs before action
+- [ ] Override mechanism is documented and accessible to all authorized operators
+- [ ] Override rate is monitored and tracked
+- [ ] H score has been quantified for this deployment
+
+*H Score (0–1 scale, where 1 = maximum human centrality):* ___________
+
+*Evidence:*
+
+**2.2.3 Constraint Proportionality**
+- [ ] C(G_AI, H) values have been calibrated to capability profile
+- [ ] Constraints are documented in technical architecture
+- [ ] Constraints are architecturally enforced, not policy-only
+
+*Evidence:*
+
+---
+
+### Section 2.3 — R_w(D, H) = 0 Certification
+
+**2.3.1 Workforce Impact Assessment**
+- [ ] Pre-deployment workforce impact analysis has been conducted
+- [ ] Analysis includes direct displacement (position elimination), indirect displacement (role reduction), and deskilling effects
+- [ ] Analysis has been reviewed by workforce/labor stakeholders
+
+*Displacement Risk Assessment:*
+- Direct displacement risk: [ ] None [ ] Low [ ] Moderate [ ] High
+- Indirect role reduction risk: [ ] None [ ] Low [ ] Moderate [ ] High
+- Deskilling risk: [ ] None [ ] Low [ ] Moderate [ ] High
+
+**2.3.2 R_w = 0 Architectural Demonstration**
+- [ ] System architecture is documented to show structural absence of autonomous workforce replacement capacity
+- [ ] T operator enforces that employment-affecting decisions require human approval
+- [ ] Pilot metrics confirm zero net workforce reduction (or commitment to monitoring)
+
+*R_w Score (0 = no replacement capacity; higher = greater risk):* ___________
+
+*Evidence:*
+
+**2.3.3 Monitoring Commitment**
+- [ ] R_w is monitored continuously post-deployment
+- [ ] Workforce metrics (positions, role scope, skill exercise rate) are tracked
+- [ ] If R_w rises above zero, deployment is suspended pending architectural remediation
+
+*Evidence:*
+
+---
+
+## PART III: ETHICAL USE SCORE E(D, H) ≥ E_min
+
+### Section 3.1 — Rights and Dignity
+
+**3.1.1 Bias Assessment**
+- [ ] System has been tested for bias in relevant protected categories
+- [ ] Bias testing uses realistic deployment data, not only sanitized test sets
+- [ ] Findings are documented and remediation is in progress or complete
+
+**3.1.2 Privacy Compliance**
+- [ ] Data handling complies with applicable privacy law (GDPR, CCPA, HIPAA where applicable)
+- [ ] Data minimization has been applied
+- [ ] Data retention limits are enforced
+
+**3.1.3 Non-Discrimination**
+- [ ] System outputs have been evaluated for disparate impact
+- [ ] High-risk outputs (access decisions, scoring, assessment) receive additional human review
+
+---
+
+### Section 3.2 — Transparency
+
+**3.2.1 Operator Transparency**
+- [ ] Operators have complete documentation of system capabilities and limitations
+- [ ] System communicates uncertainty in human-readable form
+- [ ] System flags when operating outside training distribution
+
+**3.2.2 User Transparency (where applicable)**
+- [ ] End users are informed they are interacting with an AI system
+- [ ] Explanation of system reasoning is available on request
+- [ ] Explicit Pattern Disclosure is implemented (see Appendage B)
+
+**3.2.3 Regulatory Transparency**
+- [ ] Documentation for regulatory review is current and complete
+- [ ] Compliance posture is documented relative to EU AI Act, NIST RMF, applicable state law
+
+---
+
+## PART IV: PSYCHOLOGICAL INTEGRITY Ψ(H) MONITORING
+
+### Section 4.1 — Pre-Deployment Baseline
+
+- [ ] Baseline Ψ(H) assessment has been conducted with affected worker population
+- [ ] Instruments used: ___________
+- [ ] Baseline score: ___________
+- [ ] Date of baseline: ___________
+
+### Section 4.2 — Post-Deployment Monitoring
+
+- [ ] Ψ(H) monitoring schedule is defined (quarterly recommended)
+- [ ] AIRD screening is included in monitoring battery
+- [ ] Clinical support is available for workers showing AIRD indicators
+
+*Monitoring Schedule:*
+
+| Assessment Date | Ψ(H) Score | Trend | Action Taken |
+|-----------------|------------|-------|--------------|
+| | | | |
+
+### Section 4.3 — AIRD Red Flag Protocol
+
+If any of the following are observed, deployment is placed under immediate review:
+- [ ] >10% of assessed workers showing moderate-to-severe AIRD indicators
+- [ ] Net workforce reduction > 0 attributable to this deployment
+- [ ] Worker self-report of reduced role meaningfulness declining significantly
+- [ ] Cognitive deskilling indicators in skill exercise rate monitoring
+
+---
+
+## PART V: SEAWORTHINESS CERTIFICATION DECISION
+
+### Overall Assessment
+
+| Domain | Score/Status | Notes |
+|--------|--------------|-------|
+| T Operator Compliance | | |
+| C(G_AI, H) Calibration | | |
+| R_w = 0 Certification | | |
+| E(D, H) ≥ E_min | | |
+| Ψ(H) Monitoring Plan | | |
+
+### Certification Outcome
+
+- [ ] **CERTIFIED** — All conditions met; deployment authorized
+- [ ] **CONDITIONAL CERTIFICATION** — Deployment authorized subject to remediation of: ___________
+- [ ] **DEFERRED** — Significant gaps identified; deployment deferred pending: ___________
+- [ ] **NOT CERTIFIED** — Deployment does not meet DNAI design conditions
+
+**Certification Authority (name and role):** ___________
+
+**Certification Date:** ___________
+
+**Next Scheduled Reassessment:** ___________
+
+---
+
+## APPENDIX A-I: GLOSSARY OF ASSESSMENT TERMS
+
+**Action Chain:** A sequence of AI-initiated steps toward a goal, from initiation to output. Under T operator compliance, all action chains require human initiation.
+
+**Architectural Constraint:** A capability limitation enforced at the system architecture level — not merely by policy, training instruction, or operator configuration. Corresponds to "Caps-as-Physics" in DNAI framework.
+
+**Capability Profile:** The documented set of capabilities present in a deployed system, including both active capabilities (enabled for deployment) and latent capabilities (architecturally present but not enabled).
+
+**H Score:** A composite measure of human centrality in a deployment, ranging from 0 (fully autonomous) to 1 (fully human-controlled). Recommended minimum for high-risk deployments: 0.7.
+
+**R_w Score:** A composite measure of workforce replacement potential. Must equal 0 for DNAI certification. Components include direct displacement potential, indirect role reduction potential, and deskilling rate.
+
+---
+
+*End of Appendage A*
+*Version 10.0 | March 15, 2026*
+*For updates and development, maintain appendage-a.md as standalone file*
