@@ -1,0 +1,85 @@
+# VERSION NOTES — DNAI v10.0
+
+## Document Control
+
+| Field | Value |
+|-------|-------|
+| File | DNAI_v10.md |
+| Version | 10.0 |
+| Edition | ED14 |
+| Built | March 15, 2026, 11:14 PM EDT |
+| Signature | DT-DNAI-v10.0-ED14-20260315-2314 |
+| Audit | DNAI_v10_Editorial_Audit.md |
+
+---
+
+## Source Integration Map
+
+v10.0 is an **integrated composite edition**, assembled from the following canonical source documents:
+
+| Source | Version/Date | Primary Contribution |
+|--------|-------------|---------------------|
+| DNAI Narrative Manuscript | v8.1 (March 9, 2026) | Parts I–IV backbone, narrative chapters 1–3, foreword, preface, epilogue |
+| Biology of Brakes Manuscript | v5.1 (March 10, 2026) | DNAI Equation, DHODH biology, Sidebar 7.A, psychiatric corollary, formal Ch 18 spec |
+| ED11 Summary Manuscript | v9.0 ED11 (March 12, 2026) | Full TOC structure, Ch 16–23 chapter bodies, Mercy Ridge pilot, YY Chromosome, AIRD references, glossary |
+| Canvas v9.0 ED13 | ED13 (March 15, 2026, 10:49 PM) | Updated metadata, Ch 19 Reverse Osmosis mature version |
+| Appendage A | v10.0 (this session) | DNAI Master Template: Seaworthiness Certification & Assessment Protocol |
+| Appendage B | v10.0 (this session) | Explicit Pattern Disclosure Doctrine |
+
+---
+
+## Commit History (Incorporated)
+
+| Commit | Description |
+|--------|-------------|
+| v8.1 | Full narrative manuscript backbone |
+| v9.10 | Early integration of psychiatric corollary and AIRD framework |
+| v9.12 | Mercy Ridge pilot chapter, YY Chromosome Principle |
+| v9.13 | Ch 19 Reverse Osmosis, updated equation notation, international governance framework |
+| v10.0 | Full integration, Appendages A+B embedded, editorial audit applied |
+
+---
+
+## Editorial Corrections Applied in v10.0
+
+15 corrections applied — full detail in DNAI_v10_Editorial_Audit.md:
+
+1. Preface date: March 24 → **March 26, 2024** (Dali incident NTSB-confirmed date)
+2. EU AI Act citation: L 178/1 → **Regulation (EU) 2024/1689**
+3. [9][11][12] Flagged as "[citation pending independent verification]"
+4. [13] Tanaka & Reddien: noted 2011 primary source, 2023 volume pending verification
+5. Goldman Sachs labor figures: 2025 vs. 2026 temporal distinction added
+6. Ch 1 gerund fix: "pulling up" → "brought up"
+7. Ch 17 "Deaxy" introduction added
+8. Part V: Dante POV bridge epigraph added
+9. Ch 18: R(A) vs R_w(D,H) notation bridge added
+10. Ch 20: SRY full term: "SRY (Sex-determining Region Y)"
+11. [19] Schoenbaum 7th ed (Dec 2025) note added
+12. Ch 16: Maria dialogue punctuation corrected
+13. Ch 16: Sandra desk modifier clarified
+14. Ch 17: Pilot documentation gap footnote added
+15. Edition timestamp updated to ED14
+
+---
+
+## File Package
+
+| File | Description |
+|------|-------------|
+| DNAI_v10.md | Full integrated manuscript with Appendages A+B |
+| appendage-a.md | Standalone: DNAI Master Template (Seaworthiness Certification) |
+| appendage-b.md | Standalone: Explicit Pattern Disclosure Doctrine |
+| VERSION-NOTES-v10.0.md | This file |
+| DNAI_v10_Editorial_Audit.md | Full audit report |
+
+---
+
+## Known Gaps in Integration Edition
+
+- Chapters 4–15 are represented by a single integration placeholder in this edition; full chapter bodies exist in v8.1 and v9.0 source documents and should be inserted for the production manuscript.
+- Citations [9][11][12][13] require library verification before final publication.
+- Citation [23] (Stanford Medicine) date should be corrected to 2025 in the production edition.
+
+---
+
+*DNAI_v10.0 | Drake Turley | March 2026*
