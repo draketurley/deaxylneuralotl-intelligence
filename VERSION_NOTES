@@ -1,1 +1,101 @@
-# Placeholder
+# VERSION NOTES — DNAI v11.0
+
+## Document Control
+
+| Field | Value |
+|-------|-------|
+| File | DNAI_v11.md |
+| Version | 11.0 |
+| Edition | ED15 |
+| Built | March 24, 2026, 3:20 AM EDT |
+| Signature | DT-DNAI-v11.0-ED15-20260324-0320 |
+| Audit | DNAI_v10_Editorial_Audit.md (v10.0) + v11.0 Similar Work Integration |
+| Prior Version | DNAI_v10.0 (ED14, March 15, 2026) |
+
+---
+
+## v11.0 Changes Summary
+
+v11.0 adds **Chapter 21A: Similar Work and Differentiation** — a comprehensive cross-domain literature review and positioning analysis synthesized from three independent comparative research documents.
+
+### New Content Added
+
+| Section | Description |
+|---------|-------------|
+| Chapter 21A: Similar Work and Differentiation | New chapter inserted between Chapter 21 (Challenges and Limitations) and Part VI (Charting the Future) |
+| Table of Contents | Updated to include Chapter 21A |
+| DNAI_Similar_Work_Comprehensive.md | New standalone reference file: full combined similar work analysis |
+
+### Chapter 21A Coverage
+
+| Subsection | Content |
+|------------|---------|
+| 21A.1 Major Governance Frameworks | NIST AI RMF, EU AI Act, Constitutional AI — comparison and differentiation |
+| 21A.2 Convergent Academic Literature | Via Negativa (arXiv Mar 2026), Machines that Halt (PMC May 2025), Topological Construction (SSRN Mar 2026) |
+| 21A.3 Biological Analogy Literature | AI-weights-as-DNA, Binary→Biology convergence, Axolotl/Anthropic parallels |
+| 21A.4 GyroGovernance / GyroConcord Overlap | Explicit comparison with GyroGovernance.com framework; independent coinage noted |
+| 21A.5 Seaworthiness Standard | Maritime AI cognitive seaworthiness; nuclear analogy literature |
+| 21A.6 Where DNAI Has No Peer | AIRD public health model; biological analogy program; unified equation-governance-seaworthiness bundle |
+
+---
+
+## Source Integration Map (cumulative)
+
+| Source | Version/Date | Primary Contribution |
+|--------|-------------|----------------------|
+| DNAI Narrative Manuscript | v8.1 (March 9, 2026) | Parts I–IV backbone, narrative chapters 1–3, foreword, preface, epilogue |
+| Biology of Brakes Manuscript | v5.1 (March 10, 2026) | DNAI Equation, DHODH biology, Sidebar 7.A, psychiatric corollary, formal Ch 18 spec |
+| ED11 Summary Manuscript | v9.0 ED11 (March 12, 2026) | Full TOC structure, Ch 16–23 chapter bodies, Mercy Ridge pilot, YY Chromosome, AIRD references, glossary |
+| Canvas v9.0 ED13 | ED13 (March 15, 2026) | Updated metadata, Ch 19 Reverse Osmosis mature version |
+| Appendage A | v10.0 | DNAI Master Template: Seaworthiness Certification & Assessment Protocol |
+| Appendage B | v10.0 | Explicit Pattern Disclosure Doctrine |
+| Similar Work Analysis | v11.0 (March 24, 2026) | Chapter 21A: three comparative research documents synthesized |
+
+---
+
+## Commit History
+
+| Commit | Description |
+|--------|-------------|
+| v8.1 | Full narrative manuscript backbone |
+| v9.10 | Early integration of psychiatric corollary and AIRD framework |
+| v9.12 | Mercy Ridge pilot chapter, YY Chromosome Principle |
+| v9.13 | Ch 19 Reverse Osmosis, updated equation notation, international governance framework |
+| v10.0 | Full integration, Appendages A+B embedded, editorial audit applied (ED14) |
+| v11.0 | Chapter 21A Similar Work added; three comparison documents synthesized; TOC updated (ED15) |
+
+---
+
+## v11.0 Changes Applied
+
+1. Chapter 21A added (Similar Work and Differentiation) — inserted after Chapter 21, before Part VI
+2. Table of Contents: "Chapter 21A: Similar Work and Differentiation" added to Part V list
+3. Document metadata: version 10.0 → 11.0, ED14 → ED15, date updated to March 24, 2026
+4. Document Control Signature: DT-DNAI-v11.0-ED15-20260324-0320
+5. Status line updated to include v11.0 ED15 Similar Work integration
+6. DNAI_Similar_Work_Comprehensive.md added as new standalone reference file
+
+---
+
+## File Package (v11.0)
+
+| File | Description |
+|------|-------------|
+| DNAI_v11.md | Full integrated manuscript with Appendages A+B + Chapter 21A |
+| DNAI_Similar_Work_Comprehensive.md | Standalone similar work and differentiation reference document |
+| appendage-a | Standalone: DNAI Master Template (Seaworthiness Certification) |
+| appendage-b | Standalone: Explicit Pattern Disclosure Doctrine |
+| VERSION_NOTES | This file (updated to v11.0) |
+| dnai_v10.0_editorial_audit | Full audit report from v10.0 (unchanged) |
+
+---
+
+## Known Gaps (carried forward from v10.0)
+
+- Chapters 4–15 are represented by a single integration placeholder; full chapter bodies exist in v8.1 and v9.0 source documents and should be inserted for the production manuscript.
+- Citations [9][11][12][13] require library verification before final publication.
+- Citation [23] (Stanford Medicine) date should be corrected to 2025 in the production edition.
+
+---
+
+*DNAI_v11.0 | Drake Turley | March 24, 2026*
